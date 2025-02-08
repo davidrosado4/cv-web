@@ -1,7 +1,7 @@
 export const bio = [
   "Hello, I'm David Rosado!",
   "<strong>bla bla bla</strong> aa",
-  "bla bla.",
+  "bla",
   "bla bla",
 ];
 
