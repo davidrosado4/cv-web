@@ -67,7 +67,7 @@ window.addEventListener("DOMContentLoaded", async function () {
 
     el.innerHTML = `
         <a href="${html_url}" target="_blank" style="text-decoration: none; color: black; display: block; border-radius: 12px; padding: 16px; font-size: 14px; background: linear-gradient(135deg, rgb(0, 51, 102), rgb(0, 153, 204)); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub logo" style="width: 30px; height: 30px; position: relative; top: 30px; right: -806px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub logo" style="width: 30px; height: 30px; position: relative; top: 30px; right: -790px;">
 
             <div style="display: flex; align-items: center; gap: 12px;">
                 <img style="width: 60px; height: 60px; border-radius: 50%; " src="${avatar_url}" alt="Profile image"></img>

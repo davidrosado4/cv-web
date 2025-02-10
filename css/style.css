@@ -110,6 +110,7 @@ figure figcaption {
 	overflow: hidden;
 	position: relative;
 	background-color: #faf4e1;
+	font-size: 16px;
 }
 
 #colorlib-aside {
@@ -2189,7 +2190,7 @@ hr {
 
   .dark-mode {
 	strong {
-		color: #f9bf3f;
+		color: #000;
 	}
   }
 

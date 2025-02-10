@@ -1,8 +1,8 @@
 export const bio = [
   "👋 <strong>Welcome!</strong>",
-  "📄 This isn’t just another CV page—if that’s what you’re after, check my <a href='https://www.linkedin.com/in/davidrosadorodriguez/' target='_blank'>LinkedIn</a>.",
+  "📄 This isn’t just another CV page — if that’s what you’re after, check my <a href='https://www.linkedin.com/in/davidrosadorodriguez/' target='_blank'>LinkedIn</a>.",
   "⚖️ This site is my personal space, a mix of work and life because balance is everything.",
-  "💡 Expect projects, thoughts, and whatever else I feel like sharing.",
+  "💡 Expect projects, thoughts, hobbies, and whatever else I feel like sharing.",
   "🚀 Take a look around!",
 ];
 
