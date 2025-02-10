@@ -139,7 +139,7 @@ function populateBlogs(items, id) {
       const blogLink = document.createElement("a");
       blogLink.href = items[i].link;
       blogLink.target = "_blank";
-      blogLink.style = "text-decoration: none; color: black; display: block;";
+      blogLink.style = "text-decoration: none; color: white; display: block;"; //color title text
 
       blogCard.appendChild(blogLink);
 
@@ -154,7 +154,7 @@ function populateBlogs(items, id) {
       const pubDateEle = document.createElement("p");
       pubDateEle.className = "publish-date";
       pubDateEle.innerHTML = getBlogDate(items[i].pubDate);
-      pubDateEle.style = "margin: 0 0 12px; font-size: 12px; color: #555;";
+      pubDateEle.style = "margin: 0 0 12px; font-size: 12px; color: #B0B0B0;";
       blogLink.appendChild(pubDateEle);
 
       // Blog Description
@@ -163,7 +163,7 @@ function populateBlogs(items, id) {
       const html = items[i].content;
       const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
       blogDescription.innerHTML = doc;
-      blogDescription.style = "margin: 0 0 12px; font-size: 12px; color: #000;";
+      blogDescription.style = "margin: 0 0 12px; font-size: 12px; color: white;";
       blogLink.appendChild(blogDescription);
 
       // Categories (Tags)
@@ -224,7 +224,7 @@ function populateRepo(items, id) {
     repoLink.href = `https://github.com/${items[i].author}/${items[i].name}`;
     repoLink.target = "_blank";
     repoLink.style =''
-      "text-decoration: none; color: black; display: block; height: 100%;";
+      "text-decoration: none; color: white; display: block; height: 100%;";
 
 
     repoCard.appendChild(repoLink);
@@ -233,14 +233,14 @@ function populateRepo(items, id) {
     const repoName = document.createElement("h4");
     repoName.className = "repo-heading";
     repoName.innerHTML = items[i].name;
-    repoName.style = "margin: 0; font-size: 18px; font-weight: bold;";
+    repoName.style = "margin: 0; font-size: 18px; font-weight: bold; color:white;";
     repoLink.appendChild(repoName);
 
     // Repository description
     const repoDescription = document.createElement("p");
     repoDescription.className = "repo-description";
     repoDescription.innerHTML = items[i].description;
-    repoDescription.style = "margin-top: 8px; font-size: 12px; color: #555;";
+    repoDescription.style = "margin-top: 8px; font-size: 12px; color: white;";
     repoLink.appendChild(repoDescription);
 
     // Stats row (Language, Stars, Forks)
@@ -251,21 +251,21 @@ function populateRepo(items, id) {
           gap: 16px; 
           margin-top: 12px; 
           font-size: 12px; 
-          color: #666;
+          color: white;
       `;
 
     // Language
     const languageDiv = document.createElement("div");
-    languageDiv.style = "display: flex; align-items: center; gap: 4px;";
+    languageDiv.style = "display: flex; align-items: center; gap: 4px; ";
     languageDiv.innerHTML = `
-          <span style="width: 8px; height: 8px; background-color: #666; border-radius: 50%; display: inline-block;"></span>
+          <span style="width: 8px; height: 8px; background-color: red; border-radius: 50%; display: inline-block;"></span>
           ${items[i].language}
       `;
     statsRow.appendChild(languageDiv);
 
     // Stars
     const starsDiv = document.createElement("div");
-    starsDiv.style = "display: flex; align-items: center; gap: 4px;";
+    starsDiv.style = "display: flex; align-items: center; gap: 4px; color:white";
     starsDiv.innerHTML = `
           <img src="https://img.icons8.com/ios-filled/16/666666/star--v1.png" alt="Stars">
           ${items[i].stars}

@@ -1,8 +1,9 @@
 export const bio = [
-  "Hello, I'm David Rosado!",
-  "<strong>bla bla bla</strong> aa",
-  "bla",
-  "bla bla",
+  "👋 <strong>Welcome!</strong>",
+  "📄 This isn’t just another CV page—if that’s what you’re after, check my <a href='https://www.linkedin.com/in/davidrosadorodriguez/' target='_blank'>LinkedIn</a>.",
+  "⚖️ This site is my personal space, a mix of work and life because balance is everything.",
+  "💡 Expect projects, thoughts, and whatever else I feel like sharing.",
+  "🚀 Take a look around!",
 ];
 
 export const skills = [
@@ -163,6 +164,6 @@ export const footer = [
   },
   {
     label: "copyright-text",
-    data: ["Made with &hearts; by Vinay Somawat"],
+    data: ["Made with &hearts; by David Rosado"],
   },
 ];
