@@ -73,23 +73,23 @@ window.addEventListener("DOMContentLoaded", async function () {
                 <img style="width: 60px; height: 60px; border-radius: 50%; " src="${avatar_url}" alt="Profile image"></img>
                 <div style="flex-grow: 1;">
                     <h3 style="margin: 0; font-size: 18px; color: white; font-weight: bold;">${name}</h3>
-                    <p style="margin: 4px 0 0; font-size: 12px; color: #B0B0B0;">
+                    <p style="margin: 4px 0 0; font-size: 12px; color: #B0B0B0; font-weight: bold;">
                         @${html_url.replace("https://", "")}
                     </p>
                 </div>
             </div>
             <div style="margin-top: 16px; display: flex; justify-content: space-between; text-align: center;">
                 <div>
-                    <p style="font-size: 12px; color: #B0B0B0; margin: 0;">REPOSITORIES</p>
-                    <p style="font-size: 20px; font-weight: bold; color: white;">${public_repos}</p>
+                    <p style="font-size: 12px; color: #B0B0B0; margin: 0; font-weight: bold;">REPOSITORIES</p>
+                    <p style="font-size: 20px; font-weight: bold; color: white; font-weight: bold;">${public_repos}</p>
                 </div>
                 <div>
-                    <p style="font-size: 12px; color: #B0B0B0; margin: 0;">FOLLOWERS</p>
-                    <p style="font-size: 20px; font-weight: bold; color: white;">${followers}</p>
+                    <p style="font-size: 12px; color: #B0B0B0; margin: 0; font-weight: bold;">FOLLOWERS</p>
+                    <p style="font-size: 20px; font-weight: bold; color: white; font-weight: bold;">${followers}</p>
                 </div>
                 <div>
-                    <p style="font-size: 12px; color: #B0B0B0; margin: 0;">FOLLOWING</p>
-                    <p style="font-size: 20px; font-weight: bold; color: white;">${following}</p>
+                    <p style="font-size: 12px; color: #B0B0B0; margin: 0; font-weight: bold;">FOLLOWING</p>
+                    <p style="font-size: 20px; font-weight: bold; color: white; font-weight: bold;">${following}</p>
                 </div>
             </div>
         </a>

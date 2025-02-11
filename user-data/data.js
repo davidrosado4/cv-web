@@ -8,11 +8,12 @@ export const bio = [
 
 export const publications_talks = [
   {
-    title: "Understanding Quantum Computing",
-    pubDate: "2023-10-15",
-    pdflink: "https://raw.githubusercontent.com/your-username/your-repo/main/assets/pdfs/quantum-computing.pdf",
-    abstract: "<p>An introduction to quantum computing and its potential impact on cryptography and AI.</p>",
-    keywords: ["Quantum Computing", "AI", "Cryptography"],
+    title: "Enhancing Cybersecurity Intelligence through Machine Learning:<br><span style='display:block; margin-top: 6px;'></span> Clustering and Forecasting Analysis of Honeypot Data",
+    pubDate: "2024-11-13",
+    pdflink: "https://github.com/davidrosado4/cv-web/blob/main/publications/honeypots_cyber_AI.pdf?raw=true",
+    abstract: "<p>Discover key insights into global cyberattack patterns with our latest research. This study analyzes data from distributed honeypots, applies clustering techniques to detect attack trends, and develops a forecasting model to predict cyber threats. Special focus is given to unidentified malware, aiding cybersecurity strategy and resource planning.</p>",
+    keywords: ["Publication", "Cybersecurity", "AI", "Honeypots"],
+    magazine: "Published in Agència de Ciberseguretat de Catalunya."
   },
   {
     title: "Deep Learning in Medical Imaging",

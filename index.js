@@ -143,7 +143,7 @@ function populateBlogs(items, id) {
       const pubDateEle = document.createElement("p");
       pubDateEle.className = "publish-date";
       pubDateEle.innerHTML = getBlogDate(items[i].pubDate);
-      pubDateEle.style = "margin: 0 0 12px; font-size: 12px; color: #B0B0B0;";
+      pubDateEle.style = "margin: 0 0 12px; font-size: 13px; color: #B0B0B0; font-weight: bold;";
       blogLink.appendChild(pubDateEle);
 
       // Blog Description
@@ -152,26 +152,41 @@ function populateBlogs(items, id) {
       const html = items[i].abstract;
       const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
       blogDescription.innerHTML = doc;
-      blogDescription.style = "margin: 0 0 12px; font-size: 12px; color: white;";
+      blogDescription.style = "margin: 0 0 12px; font-size: 13px; color: white;";
       blogLink.appendChild(blogDescription);
+
+      // Magazine
+      const magazine = document.createElement("p");
+      magazine.className = "publish-date";
+      magazine.innerHTML = items[i].magazine;
+      magazine.style = "margin: 0 0 12px; font-size: 13px; color: #B0B0B0; font-weight: bold;";
+      blogLink.appendChild(magazine);
 
       // Categories (Tags)
       const categoriesDiv = document.createElement("div");
-      categoriesDiv.style = "display: flex; gap: 8px; margin-top: 12px;";
+      categoriesDiv.style = "display: flex; gap: 8px; margin-top: 13px;";
 
-      for (const category of items[i].keywords) {
-          const badge = document.createElement("span");
-          badge.className = "badge";
-          badge.innerHTML = category;
-          badge.style = `
-              font-size: 12px;
-              padding: 4px 8px;
-              background-color: #007acc;
-              color: white;
-              border-radius: 4px;
-          `;
-          categoriesDiv.appendChild(badge);
-      }
+      for (const [index, category] of items[i].keywords.entries()) {
+        const badge = document.createElement("span");
+        
+        // Check if it's the first badge
+        if (index === 0) {
+            badge.classList.add("badgeinit"); // Add the special class for the first badge
+        } else {
+            badge.classList.add("badge"); // Add the regular badge class for others
+        }
+    
+        badge.innerHTML = category;
+        badge.style = `
+            font-size: 12px;
+            padding: 4px 8px;
+            background-color: #007acc;
+            color: white;
+            border-radius: 4px;
+        `;
+    
+        categoriesDiv.appendChild(badge);
+    }
 
       blogLink.appendChild(categoriesDiv);
 
