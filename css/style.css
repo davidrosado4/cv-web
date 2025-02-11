@@ -2138,7 +2138,7 @@ hr {
   }
 
   .repo-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px) scale(1.05);;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   }
 
@@ -2193,4 +2193,11 @@ hr {
 		color: #000;
 	}
   }
+.blog-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
 

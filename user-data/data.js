@@ -6,6 +6,45 @@ export const bio = [
   "🚀 Take a look around!",
 ];
 
+export const publications_talks = [
+  {
+    title: "Understanding Quantum Computing",
+    pubDate: "2023-10-15",
+    pdflink: "https://raw.githubusercontent.com/your-username/your-repo/main/assets/pdfs/quantum-computing.pdf",
+    abstract: "<p>An introduction to quantum computing and its potential impact on cryptography and AI.</p>",
+    keywords: ["Quantum Computing", "AI", "Cryptography"],
+  },
+  {
+    title: "Deep Learning in Medical Imaging",
+    pubDate: "2023-08-22",
+    pdflink: "https://raw.githubusercontent.com/your-username/your-repo/main/assets/pdfs/deep-learning-medical.pdf",
+    abstract: "<p>Exploring how deep learning is revolutionizing diagnostics and medical image analysis.</p>",
+    keywords: ["Deep Learning", "Medical Imaging", "AI"],
+  },
+  {
+    title: "Cybersecurity in the Age of AI",
+    pubDate: "2023-06-10",
+    pdflink: "https://raw.githubusercontent.com/your-username/your-repo/main/assets/pdfs/cybersecurity-ai.pdf",
+    abstract: "<p>The challenges and advancements in cybersecurity with the rise of artificial intelligence.</p>",
+    keywords: ["Cybersecurity", "Artificial Intelligence", "Privacy"],
+  },
+  {
+    title: "Ethical Considerations in AI Development",
+    pubDate: "2023-04-05",
+    pdflink: "https://raw.githubusercontent.com/your-username/your-repo/main/assets/pdfs/ethics-ai.pdf",
+    abstract: "<p>A discussion on the ethical challenges faced in AI model development and deployment.</p>",
+    keywords: ["Ethics", "AI", "Machine Learning"],
+  },
+  {
+    title: "The Future of Neural Networks",
+    pubDate: "2023-02-18",
+    pdflink: "https://raw.githubusercontent.com/your-username/your-repo/main/assets/pdfs/neural-networks-future.pdf",
+    abstract: "<p>Examining the next-generation architectures for neural networks and their applications.</p>",
+    keywords: ["Neural Networks", "AI", "Deep Learning"],
+  }
+];
+
+
 export const skills = [
   "JavaScript, TypeScript, Angular, AngularJS, React, HTML5, CSS, Bootstrap",
   "RxJS, NGXS, NGRX",

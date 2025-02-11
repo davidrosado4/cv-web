@@ -96,16 +96,3 @@ window.addEventListener("DOMContentLoaded", async function () {
         `;
   });
 });
-// Add CSS for the hover effect
-const style = document.createElement('style');
-style.innerHTML = `
-  .stack-card a:hover {
-    transform: translateY(-5px); /* Moves the card upwards */
-  }
-
-  .github-card a:hover {
-    transform: translateY(-5px); /* Moves the card upwards */
-  }
-`;
-
-document.head.appendChild(style);

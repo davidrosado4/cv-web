@@ -5,23 +5,12 @@ import {
   experience,
   trekking,
   footer,
+  publications_talks
 } from "./user-data/data.js";
 
 import { URLs } from "./user-data/urls.js";
 
-const { medium, gitConnected, gitRepo } = URLs;
-
-async function fetchBlogsFromMedium(url) {
-  try {
-    const response = await fetch(url);
-    const { items } = await response.json();
-    populateBlogs(items, "blogs");
-  } catch (error) {
-    throw new Error(
-      `Error in fetching the blogs from Medium profile: ${error}`
-    );
-  }
-}
+const { gitConnected, gitRepo } = URLs;
 
 async function fetchReposFromGit(url) {
   try {
@@ -137,7 +126,7 @@ function populateBlogs(items, id) {
 
       // Wrap the card content in an anchor tag
       const blogLink = document.createElement("a");
-      blogLink.href = items[i].link;
+      blogLink.href = items[i].pdflink;
       blogLink.target = "_blank";
       blogLink.style = "text-decoration: none; color: white; display: block;"; //color title text
 
@@ -160,7 +149,7 @@ function populateBlogs(items, id) {
       // Blog Description
       const blogDescription = document.createElement("p");
       blogDescription.className = "blog-description";
-      const html = items[i].content;
+      const html = items[i].abstract;
       const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
       blogDescription.innerHTML = doc;
       blogDescription.style = "margin: 0 0 12px; font-size: 12px; color: white;";
@@ -170,7 +159,7 @@ function populateBlogs(items, id) {
       const categoriesDiv = document.createElement("div");
       categoriesDiv.style = "display: flex; gap: 8px; margin-top: 12px;";
 
-      for (const category of items[i].categories) {
+      for (const category of items[i].keywords) {
           const badge = document.createElement("span");
           badge.className = "badge";
           badge.innerHTML = category;
@@ -449,7 +438,7 @@ populateBio(bio, "bio");
 
 populateSkills(skills, "skills");
 
-fetchBlogsFromMedium(medium);
+populateBlogs(publications_talks,"blogs")
 fetchReposFromGit(gitRepo);
 fetchGitConnectedData(gitConnected);
 
