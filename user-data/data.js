@@ -8,48 +8,41 @@ export const bio = [
 
 export const publications_talks = [
   {
-    title: "Enhancing Cybersecurity Intelligence through Machine Learning:<br><span style='display:block; margin-top: 6px;'></span> Clustering and Forecasting Analysis of Honeypot Data",
+    title: "On the Basins of Attraction of Root-Finding Algorithms 📚",
+    pubDate: "2024-12-11",
+    pdflink: "https://github.com/davidrosado4/cv-web/blob/main/publications/reportsSCM.pdf?raw=true",
+    abstract: "<p>Are you interested in pure <strong style='color:white;'>mathematics</strong>? This extended abstract explores the dynamics of <strong style='color:white;'>damped Traub's</strong> methods applied to polynomials, focusing on the <strong style='color:white;'>topological properties</strong> of their basins of attraction. It provides new results on <strong style='color:white;'>simple connectivity</strong> and <strong style='color:white;'>unboundedness</strong>, ensuring convergence to all roots for certain cases. 📖 </p>",
+    keywords: ["Publication", "Mathematics", "Dynamical Systems", "Root-Finding Algorithms"],
+    magazine: "Published in Reports@SCM: An electronical journal of the Societat Catalana de Matemàtiques."
+  },
+  {
+    title: "Enhancing Cybersecurity Intelligence through Machine Learning 🔒🤖",
+    pubDate: "2024-11-20",
+    pdflink: "https://www.noconname.org/",
+    abstract: "<p>This talk explores the cutting-edge integration of <strong style='color:white;'>machine learning</strong> techniques in enhancing <strong style='color:white;'>cybersecurity</strong> operations. It focuses on leveraging <strong style='color:white;'>artificial intelligence</strong> to analyze and detect potential threats in real-time, improving the efficiency of cybersecurity intelligence. The talk also covers key strategies for utilizing machine learning models for <strong style='color:white;'>anomaly detection</strong>, <strong style='color:white;'>intrusion prevention</strong>, and <strong style='color:white;'>privacy protection</strong>, with practical examples drawn from recent developments in the field. 💻🔍</p>",
+    keywords: ["Talk", "Cybersecurity", "Artificial Intelligence", "Honeypots"],
+    magazine: "Presented in the No cON Name congress."
+  },
+  {
+    title: "Enhancing Cybersecurity Intelligence through Machine Learning:<br><span style='display:block; margin-top: 6px;'></span> Clustering and Forecasting Analysis of Honeypot Data 📊🔐",
     pubDate: "2024-11-13",
     pdflink: "https://github.com/davidrosado4/cv-web/blob/main/publications/honeypots_cyber_AI.pdf?raw=true",
-    abstract: "<p>Discover key insights into global cyberattack patterns with our latest research. This study analyzes data from distributed honeypots, applies clustering techniques to detect attack trends, and develops a forecasting model to predict cyber threats. Special focus is given to unidentified malware, aiding cybersecurity strategy and resource planning.</p>",
-    keywords: ["Publication", "Cybersecurity", "AI", "Honeypots"],
+    abstract: "<p>Discover key insights into global <strong style='color:white;'>cyberattack</strong> patterns with our latest research. This study analyzes data from <strong style='color:white;'>distributed honeypots</strong>, applies <strong style='color:white;'>clustering techniques</strong> to detect attack trends, and develops a <strong style='color:white;'>forecasting model</strong> to predict <strong style='color:white;'>cyber threats</strong>. Special focus is given to unidentified malware, aiding <strong style='color:white;'>cybersecurity strategy</strong> and <strong style='color:white;'>resource planning</strong>. 🌐💡</p>",
+    keywords: ["Publication", "Cybersecurity", "Artificial Intelligence", "Honeypots"],
     magazine: "Published in Agència de Ciberseguretat de Catalunya."
-  },
-  {
-    title: "Deep Learning in Medical Imaging",
-    pubDate: "2023-08-22",
-    pdflink: "https://raw.githubusercontent.com/your-username/your-repo/main/assets/pdfs/deep-learning-medical.pdf",
-    abstract: "<p>Exploring how deep learning is revolutionizing diagnostics and medical image analysis.</p>",
-    keywords: ["Deep Learning", "Medical Imaging", "AI"],
-  },
-  {
-    title: "Cybersecurity in the Age of AI",
-    pubDate: "2023-06-10",
-    pdflink: "https://raw.githubusercontent.com/your-username/your-repo/main/assets/pdfs/cybersecurity-ai.pdf",
-    abstract: "<p>The challenges and advancements in cybersecurity with the rise of artificial intelligence.</p>",
-    keywords: ["Cybersecurity", "Artificial Intelligence", "Privacy"],
-  },
-  {
-    title: "Ethical Considerations in AI Development",
-    pubDate: "2023-04-05",
-    pdflink: "https://raw.githubusercontent.com/your-username/your-repo/main/assets/pdfs/ethics-ai.pdf",
-    abstract: "<p>A discussion on the ethical challenges faced in AI model development and deployment.</p>",
-    keywords: ["Ethics", "AI", "Machine Learning"],
-  },
-  {
-    title: "The Future of Neural Networks",
-    pubDate: "2023-02-18",
-    pdflink: "https://raw.githubusercontent.com/your-username/your-repo/main/assets/pdfs/neural-networks-future.pdf",
-    abstract: "<p>Examining the next-generation architectures for neural networks and their applications.</p>",
-    keywords: ["Neural Networks", "AI", "Deep Learning"],
   }
 ];
 
 
+
+
+
 export const skills = [
-  "JavaScript, TypeScript, Angular, AngularJS, React, HTML5, CSS, Bootstrap",
-  "RxJS, NGXS, NGRX",
-  "Jenkins, JIRA, Webpack, Git",
+  "<strong>Programming Languages:</strong> Python, C, R, HTML, CSS, JavaScript, MATLAB/Octave, SQL.",
+  
+  "<strong>Machine Learning:</strong> Numpy, Pandas, Scikit-Learn, Tensorflow, Keras, Scipy, Matplotlib, Seaborn, PySpark, <span style='margin-left: 6mm; display: inline-block; color: black;'>NLTK,</span> Langchain, Optuna, FastAPI...",
+  
+  "<strong>Others:</strong> Microsoft Azure, Docker, MongoDB, Airflow, Mlflow, Agile methodology, JIRA, Tableau, Git, LaTeX."
 ];
 
 export const experience = [
@@ -127,12 +120,9 @@ export const education = [
     subtitle: "National Institute of Technology, Warangal",
     details: [],
     tags: [
-      "Data Structures & Algorithms",
+      "Data Structures",
       "Operating Systems",
-      "Database Management System",
-      "Computer Networks",
-      "Compiler Designing",
-      "Cloud Computing",
+      "Database Management"
     ],
     icon: "graduation-cap",
   },

@@ -152,7 +152,7 @@ function populateBlogs(items, id) {
       const html = items[i].abstract;
       const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
       blogDescription.innerHTML = doc;
-      blogDescription.style = "margin: 0 0 12px; font-size: 13px; color: white;";
+      blogDescription.style = "margin: 0 0 12px; font-size: 14px; color: white;";
       blogLink.appendChild(blogDescription);
 
       // Magazine
@@ -244,7 +244,7 @@ function populateRepo(items, id) {
     const repoDescription = document.createElement("p");
     repoDescription.className = "repo-description";
     repoDescription.innerHTML = items[i].description;
-    repoDescription.style = "margin-top: 8px; font-size: 12px; color: white;";
+    repoDescription.style = "margin-top: 8px; font-size: 14px; color: white;";
     repoLink.appendChild(repoDescription);
 
     // Stats row (Language, Stars, Forks)
@@ -254,7 +254,7 @@ function populateRepo(items, id) {
           align-items: center; 
           gap: 16px; 
           margin-top: 12px; 
-          font-size: 12px; 
+          font-size: 13px; 
           color: white;
       `;
 
@@ -320,10 +320,18 @@ function populateExp_Edu(items, id) {
     }
 
     let divTags = document.createElement("div");
+    divTags.style = "display: flex; gap: 8px; margin-top: 13px;";
     for (let j = 0; j < items[i].tags.length; j++) {
       let spanTags = document.createElement("span");
       spanTags.className = "badge";
       spanTags.innerHTML = items[i].tags[j];
+      spanTags.style = `
+            font-size: 12px;
+            padding: 4px 8px;
+            background-color: #007acc;
+            color: white;
+            border-radius: 4px;
+        `;
       divTags.append(spanTags);
     }
     divTimelineLabel.append(divTags);

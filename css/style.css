@@ -2116,7 +2116,7 @@ span {
     vertical-align: middle;
     white-space: nowrap;
     text-align: center;
-    background-color: green !important;
+    background-color: #8b2525c0 !important;
     border-radius: 10px;
 }
 
@@ -2131,7 +2131,7 @@ span {
     vertical-align: middle;
     white-space: nowrap;
     text-align: center;
-    background-color: brown !important;
+    background-color: #a52a2a !important;
     border-radius: 10px;
 }
 
