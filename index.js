@@ -305,6 +305,7 @@ function populateExp_Edu(items, id) {
 
     let spanh2 = document.createElement("span");
     spanh2.innerHTML = items[i].duration;
+    spanh2.style = "margin-left: 4mm; color: #B0B0B0; font-weight: bold;";
 
     let h2TimelineLabel = document.createElement("h2");
     h2TimelineLabel.innerHTML = items[i].title;
