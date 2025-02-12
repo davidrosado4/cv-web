@@ -320,7 +320,7 @@ function populateExp_Edu(items, id) {
     for (let j = 0; j < items[i].details.length; j++) {
       let pTimelineText = document.createElement("p");
       pTimelineText.className = "timeline-text";
-      pTimelineText.innerHTML = "&blacksquare; " + items[i].details[j];
+      pTimelineText.innerHTML = items[i].details[j];
       divTimelineLabel.append(pTimelineText);
     }
 
