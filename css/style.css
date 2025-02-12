@@ -893,6 +893,7 @@ body.offcanvas .colorlib-nav-toggle {
 	-moz-background-clip: padding;
 	background-clip: padding-box;
 	border-radius: 10px;
+	font-weight: 600;
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
@@ -916,18 +917,19 @@ body.offcanvas .colorlib-nav-toggle {
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
 	margin-bottom: 10px;
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label .timeline-sublabel {
-	font-weight: 600;
+	font-weight: 550;
 	margin: 0 0px 5px;
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label .timeline-text {
 	margin-bottom: 0px;
-	font-size: 13px;
-	color: white /*COLOR  CUERPO LETRA*/
+	font-size: 14px;
+	color: white; /*COLOR  CUERPO LETRA*/
+	font-weight: 50;
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label div {
@@ -1966,7 +1968,7 @@ ul {
 }
 
 .publish-date {
-	color: dimgray;
+	color: #B0B0B0;
 	font-size: 12px;
 	margin-bottom: 0px;
 	font-weight: 600;

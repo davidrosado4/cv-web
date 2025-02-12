@@ -302,10 +302,11 @@ function populateExp_Edu(items, id) {
     let spanTimelineSublabel = document.createElement("span");
     spanTimelineSublabel.className = "timeline-sublabel";
     spanTimelineSublabel.innerHTML = items[i].subtitle;
+    spanTimelineSublabel.style = "font-family: cursive";
 
     let spanh2 = document.createElement("span");
     spanh2.innerHTML = items[i].duration;
-    spanh2.style = "margin-left: 4mm; color: #B0B0B0; font-weight: bold;";
+    spanh2.style = "margin-left: 4mm; color:rgb(202, 187, 187); font-weight: bold;";
 
     let h2TimelineLabel = document.createElement("h2");
     h2TimelineLabel.innerHTML = items[i].title;
