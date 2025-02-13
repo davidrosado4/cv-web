@@ -106,19 +106,10 @@ function populateActivities(items) {
     const h3 = document.createElement('h3');
     h3.innerHTML = item.title;
 
-    // Create a link if there's a URL
-    if (item.link) {
-      const link = document.createElement('a');
-      link.href = item.link;
-      link.target = "_blank";
-      link.innerHTML = "Check it out!";
-      h3.appendChild(link);
-    }
 
     // Create a div for the activity image
     const img = document.createElement('img');
-    img.src = item.image;
-    console.log(item.image);
+    img.src = encodeURI(item.image);;
     img.alt = item.title;
     img.classList.add('activity-image');  // Add a class for styling the image if needed
     img.onload = function() {

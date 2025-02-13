@@ -97,15 +97,16 @@ export const experience = [
 
 export const activities = [
   {
-    title: "Singing in the Choir 🎶",
-    link: "https://www.instagram.com/yourchoir",  // Instagram link to your choir's page
-    image: "https://github.com/davidrosado4/cv-web/blob/main/logo.jpg?raw=true"  // Image of the choir (optional)
-  },
-  {
-    title: "Beach Volleyball 🌊🏐",
-    link: "https://www.yourvolleyballclub.com",  // Link to your volleyball club
-    image: "https://github.com/davidrosado4/cv-web/blob/main/logo.jpg?raw=true"  // Image of a volleyball game or team (optional)
-  }
+    title: "<strong>Choir Singer 🎤🎶</strong>",
+    details: "Every Tuesday, from 19:30 to 21:00, I sing with the choir <strong>Cor Jove del Orfeo Sarrianenc💚🎶</strong>. This experience helps me connect with my more vulnerable and human side. The choir, conducted by Gerard Ibañez, is a semi-professional group that performs a wide range of music, from <i>Queen</i> to <i>The Lion King: The Broadway Musical</i>. <br> <strong>Follow us on Instagram: <a href='https://www.instagram.com/corjovedelorfeosarrianenc?igsh=MXM2cnpjdTdsNzllMQ==' target='_blank'>@corjoveorfeosarrianenc</a></strong>",
+    image: "https://i.postimg.cc/Pq4v6bNB/38cef8b9-099b-4169-97a6-3984b10111c7.jpg"  // Image of the choir (optional)
+},
+{
+  title: "<strong>Beach Volleyball 🌊🏐</strong>",
+  details: "Every Wednesday and Thursday afternoon, I train <strong>beach volleyball💙</strong>. Sports have always played a crucial role in my life. I trained in water polo for more than 10 years, but due to compatibility issues, I switched to beach volleyball. It has now been over 5 years that I've been playing this amazing sport at a semi-professional level.  <br> <strong>Check this out: <a href='https://beachsportscatalunya.com/' target='_blank'>Beach Volleyball Club</a></strong> ",  // Link to your volleyball club
+  image: "https://i.postimg.cc/bJSDq7mj/IMG-1119.jpg"  // Image of a volleyball game or team (optional)
+}
+
 ];
 
 export const education = [
@@ -117,7 +118,8 @@ export const education = [
       "🧠 Focused on advanced machine learning techniques and big data analytics.",
       "🤖 Developed predictive models using deep learning and NLP methodologies.",
       "📊 Worked on recommender systems and real-world data-driven projects.",
-      "🔒 Conducted research on cybersecurity data to enhance threat detection and prevention."
+      "🔒 Conducted research on cybersecurity data to enhance threat detection and prevention.",
+      "📥 [Download my thesis](https://github.com/davidrosado4/cv-web/blob/main/thesis/TFM_data.pdf?raw=true)"
     ],
     tags: [
       "Machine Learning",
@@ -135,7 +137,8 @@ export const education = [
     details: [
       "📐 Explored complex mathematical theories including holomorphic dynamics and functional analysis.",
       "📈 Applied differential equations to model real-world problems.",
-      "🔬 Conducted research in root-finding algorithms through holomorphic dynamics, focusing on their practical applications."
+      "🔬 Conducted research in root-finding algorithms through holomorphic dynamics, focusing on their practical applications.",
+      "📥 [Download my thesis](https://github.com/davidrosado4/cv-web/blob/main/thesis/TFM_maths.pdf?raw=true)"
     ],
     tags: ["MATLAB", "Holomorphic Dynamics", "Fractals", "Differential Equations", "Functional Analysis"],
     icon: "sort-numeric-desc",
@@ -147,12 +150,14 @@ export const education = [
     details: [
       "📚 Built a strong foundation in pure and applied mathematics.",
       "🔢 Studied advanced topics such as topology, Galois theory, and complex dynamics.",
-      "🌀 Engaged in research projects related to dynamical systems."
+      "🌀 Engaged in research projects related to dynamical systems.",
+      "📥 [Download my thesis](https://github.com/davidrosado4/cv-web/blob/main/thesis/TFG.pdf?raw=true)"
     ],
     tags: ["C Programming", "Topology", "Galois theory", "Complex Dynamics", "Dynamical Systems"],
     icon: "graduation-cap"
   }
 ];
+
 
 
 
