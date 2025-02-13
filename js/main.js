@@ -181,15 +181,23 @@ Accordion.prototype.dropdown = function (e) {
 var accordion = new Accordion($("#accordion"), false);
 
 function enableDarkMode() {
-  const page = document.getElementById("colorlib-page"); // Target the specific element
+  const page = document.getElementById("colorlib-page");
+  const toggleButton = document.getElementById("toggleMode");
+  
+  // Toggle the dark-mode class on the page
   page.classList.toggle("dark-mode");
 
+  // Change background and text color based on the mode
   if (page.classList.contains("dark-mode")) {
     page.style.backgroundColor = "#2E2E2E";
     page.style.color = "white";
+    toggleButton.innerHTML = "🌞";  // Change to sun icon for dark mode
+    localStorage.setItem('theme', 'dark');  // Save dark mode in localStorage
   } else {
     page.style.backgroundColor = "#faf4e1";
     page.style.color = "black";
+    toggleButton.innerHTML = "🌕";  // Change to moon icon for light mode
+    localStorage.setItem('theme', 'light');  // Save light mode in localStorage
   }
 }
 

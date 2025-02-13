@@ -2239,3 +2239,22 @@ hr {
 	padding-right: 50px;
 	text-align: justify;
 }
+.dark-mode-toggle {
+	position: fixed;
+	bottom: 50px;  /* This places the button 50px from the bottom */
+	right: 20px;   /* This places the button 20px from the right */
+	z-index: 999;
+}
+
+.dark-mode-toggle button {
+	background-color: #808080;
+	border: none;
+	padding: 8px 12px;  /* Decreased padding to make the circle smaller */
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 24px;  /* Reduced font-size to shrink the icon inside */
+}
+
+.dark-mode-toggle button:hover {
+	background-color: #808080;
+}

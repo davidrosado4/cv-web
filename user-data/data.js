@@ -119,7 +119,7 @@ export const education = [
       "🤖 Developed predictive models using deep learning and NLP methodologies.",
       "📊 Worked on recommender systems and real-world data-driven projects.",
       "🔒 Conducted research on cybersecurity data to enhance threat detection and prevention.",
-      "📥 [Download my thesis](https://github.com/davidrosado4/cv-web/blob/main/thesis/TFM_data.pdf?raw=true)"
+      "<strong><a href='https://github.com/davidrosado4/cv-web/blob/main/thesis/TFM_data.pdf?raw=true' target='_blank' style='color: #FF6347;'>📥 Download my thesis</a></strong>"
     ],
     tags: [
       "Machine Learning",
@@ -138,7 +138,7 @@ export const education = [
       "📐 Explored complex mathematical theories including holomorphic dynamics and functional analysis.",
       "📈 Applied differential equations to model real-world problems.",
       "🔬 Conducted research in root-finding algorithms through holomorphic dynamics, focusing on their practical applications.",
-      "📥 [Download my thesis](https://github.com/davidrosado4/cv-web/blob/main/thesis/TFM_maths.pdf?raw=true)"
+      "<strong><a href='https://github.com/davidrosado4/cv-web/blob/main/thesis/TFM_maths.pdf?raw=true' target='_blank' style='color: #FF6347;'>📥 Download my thesis</a></strong>"
     ],
     tags: ["MATLAB", "Holomorphic Dynamics", "Fractals", "Differential Equations", "Functional Analysis"],
     icon: "sort-numeric-desc",
@@ -151,7 +151,7 @@ export const education = [
       "📚 Built a strong foundation in pure and applied mathematics.",
       "🔢 Studied advanced topics such as topology, Galois theory, and complex dynamics.",
       "🌀 Engaged in research projects related to dynamical systems.",
-      "📥 [Download my thesis](https://github.com/davidrosado4/cv-web/blob/main/thesis/TFG.pdf?raw=true)"
+      "<strong><a href='https://github.com/davidrosado4/cv-web/blob/main/thesis/TFG.pdf?raw=true' target='_blank' style='color: #FF6347;'>📥 Download my thesis</a></strong>"
     ],
     tags: ["C Programming", "Topology", "Galois theory", "Complex Dynamics", "Dynamical Systems"],
     icon: "graduation-cap"
@@ -161,22 +161,16 @@ export const education = [
 
 
 
+
+
 export const footer = [
     {
-       label: "Dev Profiles",
+       label: "Dev Profile",
        data: [
-         {
-           text: "Stackoverflow",
-           link: "https://stackoverflow.com/users/8461233/vinay-somawat",
-         },
          {
            text: "GitHub",
            link: "https://github.com/davidrosado4",
          },
-  //       {
-  //         text: "LeetCode",
-  //         link: "https://leetcode.com/somawatvinay/",
-  //       },
        ],
      },
      {
@@ -190,31 +184,23 @@ export const footer = [
            text: "Print this page",
           func: "window.print()",
          },
-  //       {
-  //         text: "Clone this page",
-  //         link: "https://github.com/vinaysomawat/vinaysomawat.github.io",
-  //       },
        ],
      },
   {
     label: "Links",
     data: [
-      //   {
-      //     text: "Linkedin",
-      //     link: "https://www.linkedin.com/in/vinaysomawat/",
-      //   },
-      //   {
-      //     text: "Twitter",
-      //     link: "https://twitter.com/thesigmakid",
-      //   },
-      {
-        text: "Buy me a coffee",
-        link: "https://www.buymeacoffee.com/r194dME8y",
-      },
-      {
-        text: "Github",
-        link: "https://github.com/vinaysomawat/vinaysomawat.github.io",
-      },
+        {
+          text: "Linkedin",
+         link: "https://www.linkedin.com/in/davidrosadorodriguez/",
+        },
+        {
+          text: "Instagram",
+         link: "https://www.instagram.com/david.rr4?igsh=c2tsdXZkNWJ2dHF5&utm_source=qr",
+        },
+        {
+          text: "Twitter",
+         link: "https://x.com/rosadodav?s=21&t=G_Fr4BYRYfMK2f9MfE1r0w",
+        }
     ],
   },
   {
