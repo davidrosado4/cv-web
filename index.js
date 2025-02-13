@@ -3,7 +3,7 @@ import {
   skills,
   education,
   experience,
-  trekking,
+  activities,
   footer,
   publications_talks
 } from "./user-data/data.js";
@@ -16,7 +16,6 @@ async function fetchReposFromGit(url) {
   try {
     const response = await fetch(url);
     const items = await response.json();
-    console.log(items);
     populateRepo(items, "repos");
   } catch (error) {
     throw new Error(`Error in fetching the blogs from repos: ${error}`);
@@ -26,7 +25,6 @@ async function fetchReposFromGit(url) {
 async function fetchGitConnectedData(url) {
   try {
     const response = await fetch(url);
-    console.log(response);
     const { basics } = await response.json();
     // populateBlogs(items, "blogs");
     mapBasicResponse(basics);
@@ -88,21 +86,67 @@ function populateSkills(items, id) {
   });
 }
 
-function populateTrekking(items) {
-  const skillsTag = document.getElementById('trekking');
+function populateActivities(items) {
+  const activitiesTag = document.getElementById('activities');
+
+  // Create a wrapper for the row
+  const row = document.createElement('div');
+  row.classList.add('row');  // Add Bootstrap's row class for a responsive layout
+
   items.forEach((item) => {
-    const h3 = getElement("li", null);
-    h3.innerHTML = item;
+    // Create column div for each activity (use col-md-6 for 2 columns in a row)
+    const activityColumn = document.createElement('div');
+    activityColumn.classList.add('col-md-6');
 
-    const divProgressWrap = getElement("div", "progress-wrap");
-    divProgressWrap.append(h3);
+    // Create a box for each activity (use 'animate-box' class for animation)
+    const divAnimateBox = document.createElement('div');
+    divAnimateBox.classList.add('animate-box');
+    
+    // Create a header for the activity title
+    const h3 = document.createElement('h3');
+    h3.innerHTML = item.title;
 
-    const divAnimateBox = getElement("div", "col-md-12 animate-box");
-    divAnimateBox.append(divProgressWrap);
+    // Create a link if there's a URL
+    if (item.link) {
+      const link = document.createElement('a');
+      link.href = item.link;
+      link.target = "_blank";
+      link.innerHTML = "Check it out!";
+      h3.appendChild(link);
+    }
 
-    skillsTag.append(divAnimateBox);
+    // Create a div for the activity image
+    const img = document.createElement('img');
+    img.src = item.image;
+    console.log(item.image);
+    img.alt = item.title;
+    img.classList.add('activity-image');  // Add a class for styling the image if needed
+    img.onload = function() {
+      console.log("Image loaded successfully");
+    };
+    img.onerror = function() {
+      console.error("Image failed to load");
+    };
+
+    // Create a div for activity details
+    const detailsDiv = document.createElement('div');
+    detailsDiv.classList.add('activity-details');
+    detailsDiv.innerHTML = item.details || "Details about this activity.";  // Fallback text if no details are provided
+    
+    // Append title, image, and details to the activity column
+    activityColumn.appendChild(h3);
+    activityColumn.appendChild(img);
+    activityColumn.appendChild(detailsDiv);
+
+    // Append the activity column to the row
+    row.appendChild(activityColumn);
   });
+
+  // Append the row to the activities container
+  activitiesTag.appendChild(row);
 }
+
+
 
 function populateBlogs(items, id) {
   const projectdesign = document.getElementById(id);
@@ -461,7 +505,6 @@ function getBlogDate(publishDate) {
     return years == 1 ? `${years} year ago` : `${years} years ago`;
   }
 }
-
 populateBio(bio, "bio");
 
 populateSkills(skills, "skills");
@@ -471,7 +514,7 @@ fetchReposFromGit(gitRepo);
 fetchGitConnectedData(gitConnected);
 
 populateExp_Edu(experience, "experience");
-populateTrekking(trekking);
+populateActivities(activities);
 populateExp_Edu(education, "education");
 
 populateLinks(footer, "footer");

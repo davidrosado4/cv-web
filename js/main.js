@@ -181,7 +181,16 @@ Accordion.prototype.dropdown = function (e) {
 var accordion = new Accordion($("#accordion"), false);
 
 function enableDarkMode() {
-  document.body.classList.toggle("dark-mode");
+  const page = document.getElementById("colorlib-page"); // Target the specific element
+  page.classList.toggle("dark-mode");
+
+  if (page.classList.contains("dark-mode")) {
+    page.style.backgroundColor = "#2E2E2E";
+    page.style.color = "white";
+  } else {
+    page.style.backgroundColor = "#faf4e1";
+    page.style.color = "black";
+  }
 }
 
 function detectDayNightMode() {

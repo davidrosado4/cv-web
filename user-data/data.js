@@ -49,7 +49,7 @@ export const experience = [
     details: [
       
     ],
-    tags: ["Artificial Intelligence", "Data Analysis", "Machine Learning", "Water Resource Management"],
+    tags: ["Research","Artificial Intelligence", "Data Analysis", "Machine Learning", "Water Resource Management"],
     icon: "tint",
   },
   {
@@ -78,89 +78,119 @@ export const experience = [
     duration: "Sep 2023 - April 2024",
     subtitle: "Data Scientist",
     details: [
-      "📚Program to develop my master’s thesis of Data Science at the Cybersecurity Agency of Catalunya.",
+      "📚 Program to develop my master’s thesis of Data Science at the Cybersecurity Agency of Catalunya.",
     ],
     tags: ["Research", "Honeypots", "Time Series", "Clustering", "Threat detection"],
     icon: "shield",
   },
   {
-    title: "Student Researcher",
+    title: "Universitat de Barcelona",
     duration: "Sep 2022 - June 2023",
-    subtitle: "SDE Intern",
+    subtitle: "Student Researcher",
     details: [
-      `Designed and developed a social media post management panel, improving collaboration efficiency by 50 percent.`,
+      `🎓 Internship program MASTER+UB. Grant offered by University of Barcelona to capt students to study a Master's degree and encourage scientific vocations in a research group. In my case, in the holomorphic dynamics research group of University of Barcelona. This program enables me to work on my final master's thesis in the field of holomorphic dynamics, specifically focusing on root finding algorithms.`,
     ],
-    tags: ["JavaScript", "Angular", "Bootstrap", "Java", "Spring Boot"],
-    icon: "group",
-  },
-];
-
-export const trekking = [
-  "<strong>Kheerganga Trek</strong>, Himachal Pradesh (9,711 feet)",
-  "<strong>Triund Trek</strong>, Himachal Pradesh (9,350 feet)",
-  "<strong>Kedarkantha Trek</strong>, Uttarakhand (12,500 feet)",
-  "<strong>Jalori Pass Trek</strong>, Himachal Pradesh (10,800 feet)",
-  "<strong>Vaishno Devi Trek</strong>, Jammu & Kashmir (5,200 feet)",
-];
-
-export const education = [
-  {
-    title: "B.Tech. in Computer Science and Engineering",
-    duration: "2016 - 2020",
-    subtitle: "National Institute of Technology, Warangal",
-    details: [],
-    tags: [
-      "Data Structures",
-      "Operating Systems",
-      "Database Management"
-    ],
-    icon: "graduation-cap",
-  },
-  {
-    title: "Class 12th in Science and Mathematics",
-    duration: "",
-    subtitle: "Board of Secondary Education, Rajasthan",
-    details: [],
-    tags: ["Physics", "Chemistry", "Mathematics"],
+    tags: ["Research", "Mathematics", "Holomorphic Dynamics", "Fractals"],
     icon: "book",
   },
 ];
 
+export const activities = [
+  {
+    title: "Singing in the Choir 🎶",
+    link: "https://www.instagram.com/yourchoir",  // Instagram link to your choir's page
+    image: "https://github.com/davidrosado4/cv-web/blob/main/logo.jpg?raw=true"  // Image of the choir (optional)
+  },
+  {
+    title: "Beach Volleyball 🌊🏐",
+    link: "https://www.yourvolleyballclub.com",  // Link to your volleyball club
+    image: "https://github.com/davidrosado4/cv-web/blob/main/logo.jpg?raw=true"  // Image of a volleyball game or team (optional)
+  }
+];
+
+export const education = [
+  {
+    title: "Master's degree in Data Science",
+    duration: "2022 - 2024",
+    subtitle: "Universitat de Barcelona",
+    details: [
+      "🧠 Focused on advanced machine learning techniques and big data analytics.",
+      "🤖 Developed predictive models using deep learning and NLP methodologies.",
+      "📊 Worked on recommender systems and real-world data-driven projects.",
+      "🔒 Conducted research on cybersecurity data to enhance threat detection and prevention."
+    ],
+    tags: [
+      "Machine Learning",
+      "Deep Learning",
+      "Big Data",
+      "Natural Language Processing",
+      "Recommender Systems"
+    ],
+    icon: "database",
+  },
+  {
+    title: "Master's degree in Advanced Mathematics",
+    duration: "2022-2024",
+    subtitle: "Universitat de Barcelona",
+    details: [
+      "📐 Explored complex mathematical theories including holomorphic dynamics and functional analysis.",
+      "📈 Applied differential equations to model real-world problems.",
+      "🔬 Conducted research in root-finding algorithms through holomorphic dynamics, focusing on their practical applications."
+    ],
+    tags: ["MATLAB", "Holomorphic Dynamics", "Fractals", "Differential Equations", "Functional Analysis"],
+    icon: "sort-numeric-desc",
+  },
+  {
+    title: "Bachelor's degree in Mathematics",
+    duration: "2018-2022",
+    subtitle: "Universitat de Barcelona",
+    details: [
+      "📚 Built a strong foundation in pure and applied mathematics.",
+      "🔢 Studied advanced topics such as topology, Galois theory, and complex dynamics.",
+      "🌀 Engaged in research projects related to dynamical systems."
+    ],
+    tags: ["C Programming", "Topology", "Galois theory", "Complex Dynamics", "Dynamical Systems"],
+    icon: "graduation-cap"
+  }
+];
+
+
+
 export const footer = [
-  //   {
-  //     label: "Dev Profiles",
-  //     data: [
-  //       {
-  //         text: "Stackoverflow",
-  //         link: "https://stackoverflow.com/users/8461233/vinay-somawat",
-  //       },
-  //       {
-  //         text: "GitHub",
-  //         link: "https://github.com/davidrosado4",
-  //       },
+    {
+       label: "Dev Profiles",
+       data: [
+         {
+           text: "Stackoverflow",
+           link: "https://stackoverflow.com/users/8461233/vinay-somawat",
+         },
+         {
+           text: "GitHub",
+           link: "https://github.com/davidrosado4",
+         },
   //       {
   //         text: "LeetCode",
   //         link: "https://leetcode.com/somawatvinay/",
   //       },
-  //     ],
-  //   },
-  //   {
-  //     label: "Resources",
-  //     data: [
-  //       {
-  //         text: "Enable Dark/Light Mode",
-  //         func: "enableDarkMode()",
-  //       },
-  //       {
-  //         text: "Print this page",
-  //         func: "window.print()",
-  //       },
+       ],
+     },
+     {
+       label: "Resources",
+       data: [
+         {
+           text: "Enable Dark/Light Mode",
+           func: "enableDarkMode()",
+         },
+         {
+           text: "Print this page",
+          func: "window.print()",
+         },
   //       {
   //         text: "Clone this page",
   //         link: "https://github.com/vinaysomawat/vinaysomawat.github.io",
   //       },
-  //     ],
-  //   },
+       ],
+     },
   {
     label: "Links",
     data: [
